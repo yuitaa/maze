@@ -1,0 +1,140 @@
+:root {
+  --color-light: #ebebe3;
+  --color-dark: #4a4a48;
+  --color-darker: #2b2b28;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DotGothic16", sans-serif;
+  user-select: none;
+  touch-action: none;
+  color: var(--color-light);
+}
+
+body {
+  background-color: var(--color-darker);
+}
+
+.game {
+  width: 100vmin;
+  height: 100vmin;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  background-color: var(--color-dark);
+  z-index: 1;
+}
+
+.fog {
+  width: 100vmin;
+  height: 100vmin;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  background: transparent;
+  background: radial-gradient(
+    circle,
+    transparent 30%,
+    #4c6c1c9a 55%,
+    var(--color-darker) 70.7%
+  );
+  z-index: 4;
+  pointer-events: none;
+}
+
+.stats {
+  position: fixed;
+  left: 0.2rem;
+  top: 0.2rem;
+  color: var(--color-light);
+  z-index: 6;
+  pointer-events: none;
+}
+
+.overray {
+  position: fixed;
+  top: 0.2rem;
+  left: 0.2rem;
+  font-size: 1.6rem;
+  z-index: 2;
+}
+
+.popup-open {
+  position: fixed;
+  top: 0.2rem;
+  right: 0.2rem;
+  z-index: 3;
+}
+
+.popup-open-button {
+  background-color: #00000000;
+  box-shadow: none;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("images/help.png");
+  background-size: cover;
+}
+
+.popup {
+  backdrop-filter: blur(3px);
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  font-size: 1.2rem;
+}
+
+.popup-window {
+  position: fixed;
+  right: 0;
+  margin: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--color-darker);
+}
+
+.popup-background {
+  width: 100%;
+  height: 100%;
+  background-color: #333333cc;
+  background: radial-gradient(at left top, #33333366, #111111);
+}
+
+.popup-close {
+  text-align: right;
+}
+
+.popup-close-button {
+  background-color: #00000000;
+  box-shadow: none;
+  border: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image: url("images/close.png");
+  background-size: cover;
+}
+
+.popup-close-button:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+button {
+  padding: 0.1rem;
+  background-color: var(--color-darker);
+  color: var(--color-light);
+}

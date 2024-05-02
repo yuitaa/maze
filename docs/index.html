@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinitie Dungeon</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <canvas class="game" id="game" width="1152" height="1152"></canvas>
+    <div class="overray" id='overray'></div>
+    <div class="popup-open" id="popup-open">
+        <button class="popup-open-button" id="popup-open-button" type="button"></button>
+    </div>
+    <div class="popup hidden" id="popup">
+        <div class="popup-window" id="popup-window">
+            <div class="popup-close">
+                <button class="popup-close-button" id="popup-close-button" type="button"></button>
+            </div>
+            <div>
+                <div class="bold">操作方法</div>
+                <div>WASD または 画面タップ で移動</div>
+                <div>行き止まりに入ると道を探索済としてマークする</div>
+                <!--
+                <hr>
+                <button type="button" id="save">セーブ</button>
+                <button type="button" id="load">ロード</button>
+                -->
+                <hr>
+                <div class="bold">クレジット</div>
+                <div>- マップ</div>
+                <a href="https://pipoya.net/sozai/assets/map-chip_tileset16/">ぴぽや - マップチップ 16x16</a> を改変
+                <div>- キャラクター</div>
+                <a href="https://pipoya.net/sozai/assets/charachip/character-chip-1/">ぴぽや - RPGキャラ基本セット</a>
+                <div>- フォント</div>
+                <a href="https://fonts.google.com/specimen/DotGothic16g">DotGothic16</a>
+            </div>
+        </div>
+        <div class="popup-background" id="popup-background"></div>
+    </div>
+    <div class="fog"></div>
+    <div class="stats" id="stats">
+        <div></div>
+    </div>
+</body>
+
+</html>
